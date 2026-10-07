@@ -1,0 +1,11 @@
+data/
+*.mat
+*.slx
+*.slxc
+*.cpar
+*.sim
+*.par
+*.dll
+*.mexw64
+slprj/
+Results/
