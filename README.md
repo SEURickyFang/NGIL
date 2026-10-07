@@ -46,7 +46,7 @@ The study focuses on constant and changing split-μ road conditions. Braking per
 
 Each GIF compares **NMPC**, a behavior-cloning **BC-MLP**, and **NGIL** in one scenario. The animations are 2D reconstructions from frozen TruckSim–Simulink closed-loop results, not native TruckSim 3D videos. Six wheel centers and orientations use recorded TruckSim outputs; the chassis outline is schematic. The animated X–Y view uses equal physical scales, with the brake-onset point set to X = 0. The lower panels show lateral offset, heading angle, and rear steering. Playback ends when longitudinal speed reaches 1.5 m/s; a method that reaches this threshold earlier remains at its final evaluated pose.
 
-S1–S5 are the five development scenarios. G1–G6 are held-out friction combinations used for evaluation. For the transition scenarios, the arrow denotes the friction change at road station 45 m, which appears at approximately X = 15 m after brake onset. These visualizations show the tested cases only; they are not evidence of performance on every possible road condition.
+S1–S5 are the five development scenarios. G1–G6 are held-out friction combinations used for evaluation. These visualizations show the tested cases only; they are not evidence of performance on every possible road condition.
 
 | Scenario | Left/right road friction μL/μR | Animation |
 |---|---|---|
@@ -62,48 +62,53 @@ S1–S5 are the five development scenarios. G1–G6 are held-out friction combin
 | G5 | 0.55 / 0.25 | [View GIF](assets/animations/G5.gif) |
 | G6 | 0.35 / 0.85 → 0.85 / 0.35 | [View GIF](assets/animations/G6.gif) |
 
-<details>
-<summary>Show S1–S5 animations</summary>
+### S1–S5 animations
 
-### S1
+#### S1
+
 ![S1 comparison of NMPC, BC-MLP, and NGIL](assets/animations/S1.gif)
 
-### S2
+#### S2
+
 ![S2 comparison of NMPC, BC-MLP, and NGIL](assets/animations/S2.gif)
 
-### S3
+#### S3
+
 ![S3 comparison of NMPC, BC-MLP, and NGIL](assets/animations/S3.gif)
 
-### S4
+#### S4
+
 ![S4 comparison of NMPC, BC-MLP, and NGIL](assets/animations/S4.gif)
 
-### S5
+#### S5
+
 ![S5 comparison of NMPC, BC-MLP, and NGIL](assets/animations/S5.gif)
 
-</details>
+### G1–G6 animations
 
-<details>
-<summary>Show G1–G6 animations</summary>
+#### G1
 
-### G1
 ![G1 comparison of NMPC, BC-MLP, and NGIL](assets/animations/G1.gif)
 
-### G2
+#### G2
+
 ![G2 comparison of NMPC, BC-MLP, and NGIL](assets/animations/G2.gif)
 
-### G3
+#### G3
+
 ![G3 comparison of NMPC, BC-MLP, and NGIL](assets/animations/G3.gif)
 
-### G4
+#### G4
+
 ![G4 comparison of NMPC, BC-MLP, and NGIL](assets/animations/G4.gif)
 
-### G5
+#### G5
+
 ![G5 comparison of NMPC, BC-MLP, and NGIL](assets/animations/G5.gif)
 
-### G6
-![G6 comparison of NMPC, BC-MLP, and NGIL](assets/animations/G6.gif)
+#### G6
 
-</details>
+![G6 comparison of NMPC, BC-MLP, and NGIL](assets/animations/G6.gif)
 
 ## Simulink controller model
 
