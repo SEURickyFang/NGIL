@@ -6,7 +6,7 @@
 
 **Corresponding author:** Guodong Yin.
 
-> This pre-publication release provides a project overview, the overall control framework, a limited MATLAB code preview, and qualitative animations. Trained models, datasets, vehicle parameters, Simulink models, and quantitative result tables are not included at this stage.
+> This pre-publication release provides a project overview, the overall control framework, a limited MATLAB code preview, a controller-only Simulink model, and qualitative animations. Trained models, datasets, vehicle parameters, the TruckSim vehicle model, and quantitative result tables are not included at this stage.
 
 ## Overview
 
@@ -105,9 +105,15 @@ S1–S5 are the five development scenarios. G1–G6 are held-out friction combin
 
 </details>
 
+## Simulink controller model
+
+[`models/NGIL_Controller.slx`](models/NGIL_Controller.slx) contains the NMPC/NGIL coordinator, six-wheel ABS execution path, and a signal-routing scaffold for connection to a vehicle model. Mode `1` selects NMPC and mode `2` selects NGIL. The model is provided so that readers can inspect the controller structure and adapt the vehicle interface.
+
+The model is **not a standalone TruckSim–Simulink reproduction package**. The TruckSim vehicle, its database and interface files, the calibrated `data/parameters.mat`, and the trained `data/policy.mat` are withheld in this pre-publication release. NMPC execution also requires CasADi/IPOPT. Opening the `.slx` is possible with Simulink R2024a; running the supplied controller algorithms requires those missing dependencies or user-supplied replacements.
+
 ## Code preview
 
-The following functions are currently provided as MATLAB P-code (`.p`): `parameters`, `controller_step`, `build_nmpc`, `solve_nmpc`, `vehicle_model`, `train_member`, and `predict_policy`. The data files `data/parameters.mat`, `data/policy.mat`, and `data/training.mat`, together with the completed Simulink model, are not included in this preview. The full source code, data, trained models, and Simulink model will be made public after the paper is accepted.
+The following functions are currently provided as MATLAB P-code (`.p`): `parameters`, `controller_step`, `build_nmpc`, `solve_nmpc`, `vehicle_model`, `train_member`, and `predict_policy`. The data files `data/parameters.mat`, `data/policy.mat`, and `data/training.mat` are not included in this preview. The full source code, data, trained models, and complete vehicle integration will be made public after the paper is accepted.
 
 ## Repository status
 
@@ -127,4 +133,6 @@ code/
 ├── learning/
 ├── tests/
 └── models/
+models/
+└── NGIL_Controller.slx
 ```

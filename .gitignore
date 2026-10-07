@@ -1,6 +1,7 @@
 data/
 *.mat
 *.slx
+!models/NGIL_Controller.slx
 *.slxc
 *.cpar
 *.sim
