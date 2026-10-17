@@ -24,27 +24,75 @@ An NMPC expert accounts for combined tire slip and vehicle dynamics. Its coordin
 
 Each animation shows the vehicle paths and six-wheel poses for NMPC, BC-MLP, and NGIL in one coordinate system. The lower panels show lateral offset, heading angle, and rear-steering angle.
 
-| Scenario | Animation | Scenario | Animation |
-|---|---|---|---|
-| S1 | ![S1 main comparison](assets/animations/main/S1.gif) | G1 | ![G1 main comparison](assets/animations/main/G1.gif) |
-| S2 | ![S2 main comparison](assets/animations/main/S2.gif) | G2 | ![G2 main comparison](assets/animations/main/G2.gif) |
-| S3 | ![S3 main comparison](assets/animations/main/S3.gif) | G3 | ![G3 main comparison](assets/animations/main/G3.gif) |
-| S4 | ![S4 main comparison](assets/animations/main/S4.gif) | G4 | ![G4 main comparison](assets/animations/main/G4.gif) |
-| S5 | ![S5 main comparison](assets/animations/main/S5.gif) | G5 | ![G5 main comparison](assets/animations/main/G5.gif) |
-|  |  | G6 | ![G6 main comparison](assets/animations/main/G6.gif) |
+### S1
+<img src="assets/animations/main/S1.gif" alt="S1 main comparison" width="960">
+
+### S2
+<img src="assets/animations/main/S2.gif" alt="S2 main comparison" width="960">
+
+### S3
+<img src="assets/animations/main/S3.gif" alt="S3 main comparison" width="960">
+
+### S4
+<img src="assets/animations/main/S4.gif" alt="S4 main comparison" width="960">
+
+### S5
+<img src="assets/animations/main/S5.gif" alt="S5 main comparison" width="960">
+
+### G1
+<img src="assets/animations/main/G1.gif" alt="G1 main comparison" width="960">
+
+### G2
+<img src="assets/animations/main/G2.gif" alt="G2 main comparison" width="960">
+
+### G3
+<img src="assets/animations/main/G3.gif" alt="G3 main comparison" width="960">
+
+### G4
+<img src="assets/animations/main/G4.gif" alt="G4 main comparison" width="960">
+
+### G5
+<img src="assets/animations/main/G5.gif" alt="G5 main comparison" width="960">
+
+### G6
+<img src="assets/animations/main/G6.gif" alt="G6 main comparison" width="960">
 
 ## Ablation animations
 
 Each animation compares four vehicles: NGIL, no member averaging, no DAgger-style closed-loop data aggregation, and no mirror-based training. The same vehicle scale, road coloring, and plot layout are used as in the main animations.
 
-| Scenario | Animation | Scenario | Animation |
-|---|---|---|---|
-| S1 | ![S1 ablation](assets/animations/ablation/S1.gif) | G1 | ![G1 ablation](assets/animations/ablation/G1.gif) |
-| S2 | ![S2 ablation](assets/animations/ablation/S2.gif) | G2 | ![G2 ablation](assets/animations/ablation/G2.gif) |
-| S3 | ![S3 ablation](assets/animations/ablation/S3.gif) | G3 | ![G3 ablation](assets/animations/ablation/G3.gif) |
-| S4 | ![S4 ablation](assets/animations/ablation/S4.gif) | G4 | ![G4 ablation](assets/animations/ablation/G4.gif) |
-| S5 | ![S5 ablation](assets/animations/ablation/S5.gif) | G5 | ![G5 ablation](assets/animations/ablation/G5.gif) |
-|  |  | G6 | ![G6 ablation](assets/animations/ablation/G6.gif) |
+### S1
+<img src="assets/animations/ablation/S1.gif" alt="S1 ablation" width="960">
+
+### S2
+<img src="assets/animations/ablation/S2.gif" alt="S2 ablation" width="960">
+
+### S3
+<img src="assets/animations/ablation/S3.gif" alt="S3 ablation" width="960">
+
+### S4
+<img src="assets/animations/ablation/S4.gif" alt="S4 ablation" width="960">
+
+### S5
+<img src="assets/animations/ablation/S5.gif" alt="S5 ablation" width="960">
+
+### G1
+<img src="assets/animations/ablation/G1.gif" alt="G1 ablation" width="960">
+
+### G2
+<img src="assets/animations/ablation/G2.gif" alt="G2 ablation" width="960">
+
+### G3
+<img src="assets/animations/ablation/G3.gif" alt="G3 ablation" width="960">
+
+### G4
+<img src="assets/animations/ablation/G4.gif" alt="G4 ablation" width="960">
+
+### G5
+<img src="assets/animations/ablation/G5.gif" alt="G5 ablation" width="960">
+
+### G6
+<img src="assets/animations/ablation/G6.gif" alt="G6 ablation" width="960">
 
 ## Code availability
 
