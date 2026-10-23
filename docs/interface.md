@@ -17,4 +17,4 @@ The vehicle-level coordinator receives measured vehicle motion, road-friction in
 | Left/right release ratios | dimensionless | Coordinator outputs bounded between 0 and 1 |
 | Rear-steering reference | rad | Coordinator output before actuator response |
 
-The schematic wheel names are FL, FR, ML, MR, RL, and RR. The public examples in this repository do not contain controller inputs, trained policies, or simulation trajectories. Their numbers are synthetic and must not be interpreted as paper results.
+The schematic wheel names are FL, FR, ML, MR, RL, and RR. The CSV in `examples/` does not contain controller inputs, trained policies, or simulation trajectories. Its numbers are synthetic and must not be interpreted as paper results. The separate `code/` and `models/` directories contain the controller preview described in the README.

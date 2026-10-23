@@ -1,6 +1,14 @@
 *.mat
 *.p
+!code/parameters.p
+!code/control/controller_step.p
+!code/expert/build_nmpc.p
+!code/expert/solve_nmpc.p
+!code/learning/predict_policy.p
+!code/learning/train_member.p
+!code/models/vehicle_model.p
 *.slx
+!models/NGIL_Controller.slx
 *.slxc
 *.cpar
 *.sim

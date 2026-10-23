@@ -22,9 +22,15 @@ An NMPC expert accounts for combined tire slip and vehicle dynamics. Its coordin
 
 ## Public preview files
 
-This pre-publication repository contains the framework figure, qualitative animations, a [signal-interface overview](docs/interface.md), and a small MATLAB [synthetic-data example](examples/generate_synthetic_data.m). The example demonstrates a CSV layout and generic plotting and metric calculations; its values are fabricated and are **not** the vehicle simulations reported in the paper.
+This pre-publication repository contains the framework figure, qualitative animations, the controller-only Simulink model, a limited MATLAB code preview, a [signal-interface overview](docs/interface.md), and a small [synthetic-data example](examples/generate_synthetic_data.m). The example demonstrates a CSV layout and generic plotting and metric calculations; its values are fabricated and are **not** the vehicle simulations reported in the paper.
 
 In MATLAB, run `examples/generate_synthetic_data`, then `examples/plot_synthetic_data`. The supplied `examples/synthetic_episode.csv` can be inspected without MATLAB. On Windows, check the release contents before committing with `powershell -NoProfile -ExecutionPolicy Bypass -File tools/audit_release.ps1` from the repository root.
+
+## Controller and MATLAB code preview
+
+The original public preview has been retained under [`code/`](code/) and [`models/NGIL_Controller.slx`](models/NGIL_Controller.slx). The model contains the coordinator interface, six-wheel ABS execution path, and rear-steering path. Mode `1` selects NMPC and mode `2` selects NGIL. The MATLAB code includes the interface and execution functions, selected training utilities, a slip-reference mapping test, and P-code versions of the model parameters, prediction model, optimizer, controller step, network member training, and policy inference.
+
+The `.p` files are executable MATLAB P-code, not editable source. This repository does not contain `data/training.mat`, `data/policy.mat`, `data/parameters.mat`, the TruckSim vehicle/database, CasADi/IPOPT, or quantitative closed-loop records. Consequently, the supplied controller cannot reproduce the paper's simulations on its own. The synthetic example above is independent of these missing dependencies.
 
 ## Main comparison animations
 
@@ -102,4 +108,4 @@ Each animation compares four vehicles: NGIL, no member averaging, no DAgger-styl
 
 ## Code availability
 
-The NMPC solver, combined-slip vehicle model, controller implementation, learning and inference code, trained weights, calibration parameters, raw trajectories, and TruckSim model are not included in this pre-publication release. The files here cannot reproduce the paper's closed-loop results. Further code and data release will be reviewed after publication.
+Selected controller and learning functions are available as MATLAB source or P-code, as described above. Editable source for the P-code functions, trained weights, calibration parameters, raw trajectories, and the TruckSim vehicle model are not included. Further code and data release will be reviewed after publication.
