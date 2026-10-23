@@ -20,6 +20,12 @@ An NMPC expert accounts for combined tire slip and vehicle dynamics. Its coordin
 
 ![Control framework](assets/framework.png)
 
+## Public preview files
+
+This pre-publication repository contains the framework figure, qualitative animations, a [signal-interface overview](docs/interface.md), and a small MATLAB [synthetic-data example](examples/generate_synthetic_data.m). The example demonstrates a CSV layout and generic plotting and metric calculations; its values are fabricated and are **not** the vehicle simulations reported in the paper.
+
+In MATLAB, run `examples/generate_synthetic_data`, then `examples/plot_synthetic_data`. The supplied `examples/synthetic_episode.csv` can be inspected without MATLAB. On Windows, check the release contents before committing with `powershell -NoProfile -ExecutionPolicy Bypass -File tools/audit_release.ps1` from the repository root.
+
 ## Main comparison animations
 
 Each animation shows the vehicle paths and six-wheel poses for NMPC, BC-MLP, and NGIL in one coordinate system. The lower panels show lateral offset, heading angle, and rear-steering angle.
@@ -96,4 +102,4 @@ Each animation compares four vehicles: NGIL, no member averaging, no DAgger-styl
 
 ## Code availability
 
-The core implementation will be released after the paper is accepted.
+The NMPC solver, combined-slip vehicle model, controller implementation, learning and inference code, trained weights, calibration parameters, raw trajectories, and TruckSim model are not included in this pre-publication release. The files here cannot reproduce the paper's closed-loop results. Further code and data release will be reviewed after publication.

@@ -1,0 +1,17 @@
+*.mat
+*.p
+*.slx
+*.slxc
+*.cpar
+*.sim
+*.par
+*.mexw64
+*.dll
+*.asv
+*.m~
+slprj/
+data/
+results/
+private/
+__pycache__/
+*.pyc
