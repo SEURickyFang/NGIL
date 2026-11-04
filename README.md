@@ -20,12 +20,6 @@ An NMPC expert accounts for combined tire slip and vehicle dynamics. Its coordin
 
 ![Control framework](assets/framework.png)
 
-## Public preview files
-
-This pre-publication repository contains the framework figure, qualitative animations, the controller-only Simulink model, a limited MATLAB code preview, a [signal-interface overview](docs/interface.md), and a small [synthetic-data example](examples/generate_synthetic_data.m). The example demonstrates a CSV layout and generic plotting and metric calculations; its values are fabricated and are **not** the vehicle simulations reported in the paper.
-
-In MATLAB, run `examples/generate_synthetic_data`, then `examples/plot_synthetic_data`. The supplied `examples/synthetic_episode.csv` can be inspected without MATLAB. On Windows, check the release contents before committing with `powershell -NoProfile -ExecutionPolicy Bypass -File tools/audit_release.ps1` from the repository root.
-
 ## Controller and MATLAB code preview
 
 The original public preview has been retained under [`code/`](code/) and [`models/NGIL_Controller.slx`](models/NGIL_Controller.slx). The model contains the coordinator interface, six-wheel ABS execution path, and rear-steering path. Mode `1` selects NMPC and mode `2` selects NGIL. The MATLAB code includes the interface and execution functions, selected training utilities, a slip-reference mapping test, and P-code versions of the model parameters, prediction model, optimizer, controller step, network member training, and policy inference.
